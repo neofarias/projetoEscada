@@ -5,16 +5,253 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PROJETO ESCADA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
     <script src='main.js'></script>
 </head>
 <body>
 
+    <div class="fieldSet">
+        <fieldset>
+            <legend>Identificação do Lance</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <label>Obra:</label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+                    <td>
+                        <label>Localização:</label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+                    <td>
+                        <label>Número do Lance:</label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Geometria do Lance</legend>
+
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Largura L1(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                        <td>
+                            <label>Largura L2(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>                        
+                    <tr>
+                        <td>
+                            <label>Largura L3(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                        <td>
+                            <label>Largura L4(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Desnível L5(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Espelho do degrau e(cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                        <td>
+                            <label>Número de degraus:</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Piso do degrau b (cm):</label>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>
+                        
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <button>Condições de Apoio</button>
+                        </td>
+                        <td>
+                            <input value=""/>
+                        </td>    
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input value=""/>
+                        </td>
+                    </tr>        
+                        
+                </table>
+            </fieldset>
+
+        </fieldset>
+    </div>
+
     <fieldset>
+        <legend>Composição de Cargas</legend>
 
-        
-
+        <table>
+            <tr>
+                <td>
+                    <label>p1 = </label>
+                </td>
+                <td>
+                    <button>Escolha as Cargas</button>
+                </td>
+                <td>
+                    <label> = 0 kN/m²</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>p2 = </label>
+                </td>
+                <td>
+                    <button>Escolha as Cargas</button>
+                </td>
+                <td>
+                    <label> = 0 kN/m²</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>p3 = </label>
+                </td>
+                <td>
+                    <button>Escolha as Cargas</button>
+                </td>
+                <td>
+                    <label> = 0 kN/m²</label>
+                </td>
+            </tr>
+        </table>
     </fieldset>
+
+    <div class="fieldSet">
+        <fieldset>
+            <legend>Dados dos Materiais</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <label>fck (Mpa): </label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>    
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>fyk (Mpa): </label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <label>cobrimento (cm): </label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>bitola (cm): </label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dimensionamento</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <label>Espessura (cm): </label>
+                    </td>
+                    <td>
+                        <input value=""/>
+                    </td>    
+                    <td rowspan="2">
+                        <button>Dimensionar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="checkBox" colspan="2">
+                        <input type="checkbox" id="cargas" name="cargas"/>
+                        <label for="cargas">Atualizar Cargas de Peso Próprio da Laje</label>  
+                    </td>
+                </tr>        
+                    
+            </table>
+        </fieldset>
+
+        <fieldset class="resultados">
+            <legend>Resultados do Programa</legend>
+            <button>Gerar Relatório</button>
+            <button>Detalhamento</button>
+        </fieldset>
+    </div>
     
 </body>
 </html>
