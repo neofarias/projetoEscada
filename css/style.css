@@ -34,3 +34,7 @@ button{
     display: flex;
     flex-direction: row;
 }
+
+.labelCheckBox{
+    padding-left: 8px;
+}
