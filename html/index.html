@@ -1,244 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PROJETO ESCADA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
     <script src='main.js'></script>
 </head>
 <body>
-
-    <div class="fieldSet">
-        <fieldset>
-            <legend>Identificação do Lance</legend>
-            <table>
-                <tr>
-                    <td>
-                        <label class="labelLance">Obra:</label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-                    <td>
-                        <label class="labelLance">Localização:</label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-                    <td>
-                        <label class="labelLance">Número do Lance:</label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-
-        <fieldset>
-            <legend>Geometria do Lance</legend>
+    <header>
+        <h1>Projeto Escada</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page"  href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page"  href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-sm">
             <fieldset>
-                <table>
-                    <tr>
-                        <td>
-                            <label>Largura L1(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                        <td>
-                            <label>Largura L2(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>                        
-                    <tr>
-                        <td>
-                            <label>Largura L3(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                        <td>
-                            <label>Largura L4(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Desnível L5(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>
-                </table>
+                <legend>Identificação do Lance</legend>
+                <p>
+                    <label for="inObra">Obra:</label>
+                    <input class="form-control" type="text" value="" id="inObra"/>
+                </p>
+                <p>
+                    <label for="inLocalizacao">Localização:</label>
+                    <input class="form-control" type="text" value="" id="inLocalizacao"/>
+                </p>
+                <p>
+                    <label for="inLance">Número do Lance:</label>
+                    <input class="form-control" type="number" value="" id="inLance"/>
+                </p>
             </fieldset>
-
             <fieldset>
-                <table>
-                    <tr>
-                        <td>
-                            <label>Espelho do degrau e(cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                        <td>
-                            <label>Número de degraus:</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <label>Piso do degrau b (cm):</label>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>
-                        
-                </table>
-            </fieldset>
-
-            <fieldset>
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            <button>Condições de Apoio</button>
-                        </td>
-                        <td>
-                            <input value=""/>
-                        </td>    
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input value=""/>
-                        </td>
-                    </tr>        
-                        
-                </table>
-            </fieldset>
-
-        </fieldset>
-    </div>
-
-    <fieldset>
-        <legend>Composição de Cargas</legend>
-        <table>
-            <tr>
-                <td>
+                <legend>Composição de Cargas</legend>
+                <p>
                     <label>p1 = </label>
-                </td>
-                <td>
-                    <button>Escolha as Cargas</button>
-                </td>
-                <td>
+                    <button class="btn btn-primary">Escolha as Cargas</button>
                     <label> = 0 kN/m²</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </p>
+                <p>
                     <label>p2 = </label>
-                </td>
-                <td>
-                    <button>Escolha as Cargas</button>
-                </td>
-                <td>
+                    <button class="btn btn-primary">Escolha as Cargas</button>
                     <label> = 0 kN/m²</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </p>
+                <p>
                     <label>p3 = </label>
-                </td>
-                <td>
-                    <button>Escolha as Cargas</button>
-                </td>
-                <td>
+                    <button class="btn btn-primary">Escolha as Cargas</button>
                     <label> = 0 kN/m²</label>
-                </td>
-            </tr>
-        </table>
-    </fieldset>
+                </p>
+            </fieldset>
 
-    <div class="fieldSet">
-        <fieldset>
-            <legend>Dados dos Materiais</legend>
-            <table>
-                <tr>
-                    <td>
-                        <label>fck (Mpa): </label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>    
-                </tr>
-                <tr>
-                    <td>
-                        <label>fyk (Mpa): </label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>cobrimento (cm): </label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>bitola (cm): </label>
-                    </td>
-                    <td>
-                        <input value=""/>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+            <fieldset class="col-sm">
+                <legend>Dimensionamento</legend>
+                <p>
+                    <label for="inEspessura">Espessura (cm): </label>
+                    <input class="form-control" value="" id="inEspessura" />
+                    <button class="btn btn-primary">Dimensionar</button>
+                </p>
+                <p>
+                    <input type="checkbox" id="inCargas" name="cargas" />
+                    <label for="inCargas">Atualizar Cargas de Peso Próprio da Laje</label>  
+                </p>
+            </fieldset>
+            </div>
 
-        <fieldset>
-            <legend>Dimensionamento</legend>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <label>Espessura (cm): </label>
-                        <input value=""/>
-                    </td>
-                    <td rowspan="2">
-                        <button>Dimensionar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="checkBox" colspan="2">
-                        <input type="checkbox" id="cargas" name="cargas"/>
-                        <label class="labelCheckBox" for="cargas">Atualizar Cargas de Peso Próprio da Laje</label>  
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+            <fieldset class="col-sm">
+                <legend>Geometria do Lance</legend>
+                <fieldset>
+                    <p>    
+                        <label for="inLarguraL1">Largura L1(cm):</label>
+                        <input class="form-control" value="" id="inLarguraL1"/>
+                    </p>
+                    <p>
+                        <label for="inLarguraL2">Largura L2(cm):</label>
+                        <input class="form-control" value="" id="inLarguraL2" />
+                    </p>
+                    <p>
+                        <label for="inLarguraL3">Largura L3(cm):</label>
+                        <input class="form-control" value="" id="inLarguraL3" />
+                    </p>
+                    <p>
+                        <label for="inLarguraL4">Largura L4(cm):</label>
+                        <input class="form-control" value="" id="inLarguraL4" />
+                    </p>
+                    <p>
+                        <label for="inLarguraL5">Desnível L5(cm):</label>
+                        <input class="form-control" value="" id="inLarguraL5" />
+                    </p>
+                </fieldset>
 
-        <fieldset class="resultados">
-            <legend>Resultados do Programa</legend>
-            <button>Gerar Relatório</button>
-            <button>Detalhamento</button>
-        </fieldset>
-    </div>
-    
+                <fieldset>
+                    <p>
+                        <label for="inEspelho">Espelho do degrau e(cm):</label>
+                        <input class="form-control" value="" id="inEspelho" />
+                    </p>
+                    <p>
+                        <label for="inDegraus">Número de degraus:</label>
+                        <input class="form-control" value="" id="inDegraus" />
+                    </p>
+                    <p>
+                        <label for="inPiso">Piso do degrau b (cm):</label>
+                        <input class="form-control" value="" id="inPiso"/>
+                    </p>            
+                </fieldset>
+
+                <fieldset>
+                    <button class="btn btn-primary">Condições de Apoio</button>
+                    <input class="form-control" value=""/>
+                    <input class="form-control" value=""/>
+                </fieldset>
+            </fieldset>
+        </div>
+
+        <div class="row">
+            <fieldset class="col-sm">
+                <legend>Dados dos Materiais</legend>
+                <p>    
+                    <label for="inFck">fck (Mpa): </label>
+                    <input class="form-control" value="" id="inFck" />
+                </p>    
+                <p>
+                    <label for="inFyk">fyk (Mpa): </label>
+                    <input class="form-control" value="" id="inFyk" />
+                </p>
+                <p>
+                    <label for="inCobrimento">cobrimento (cm): </label>
+                    <input class="form-control" value="" id="inCobrimento" />
+                </p>
+                <p>
+                    <label for="inBitola">bitola (cm): </label>
+                    <input class="form-control" value="" id="inBitola" />
+                 </p>   
+            </fieldset>
+
+            <fieldset class="col-sm">
+                <legend>Resultados do Programa</legend>
+                <button class="btn btn-primary">Gerar Relatório</button>
+                <button class="btn btn-primary">Detalhamento</button>
+            </fieldset>
+        </div>
+    </main>
 </body>
 </html>
